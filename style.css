@@ -1,0 +1,65 @@
+:root{ 
+   --bg:black;
+}
+body{
+
+    background-color: blue;
+}
+#full-width-component{
+
+    display:block;
+}
+
+#menue{
+
+    display:inline-block;
+}
+ul{
+    list-style-type: none;
+    padding: 0;
+}
+li{
+/* makes items in one line horizontal */
+    display: inline-block;
+    border:1px solid black;
+}
+#third-block{
+display: grid;
+    border:1px solid black;
+    /* grid-template-columns:auto auto auto auto; */
+   grid-template-rows:25% 25% 25% 25% 25%;
+    /*  grid-template-columns: 25% 25% 25% 25%;
+    gap: 20px; */
+    /* justify-content: space-around; */
+    /* align-content: end; */
+}
+div{
+
+    border:1px solid black;
+}
+.flex-container{
+
+display: flex;
+/* flex-direction: column-reverse; */
+/* flex-direction: row-reverse; */
+flex-direction: row;
+width: 300px;
+flex-wrap: nowrap;
+/* horizontal */
+justify-content: flex-start;
+height: 300px;
+/* vertical */
+align-content: baseline;
+}
+.flex-item{
+    flex-grow: 8;
+    flex-shrink: 2;
+    align-self: auto;
+}
+/* mobile style */
+@media only screen and  (max-width:600px){
+body{
+    /* background-color:black; */
+    background-color:var(bg);
+}
+}
